@@ -422,6 +422,9 @@ table {
   margin: 150px auto;
   word-break: break-all;
 }
+.portDetail__table a{
+  color: #2185a0;
+}
 
 .portDetail__table th {
   padding: 20px;
@@ -598,9 +601,12 @@ table {
     height: 50vh;
     object-fit: cover;
   }
+  .portDetail__ttl{
+    margin-top: 50px;
+  }
 
   .portDetail__table {
-    margin: 100px auto;
+    margin: 50px auto;
     width: 90%;
   }
 
@@ -608,6 +614,10 @@ table {
   .portDetail__table td {
     display: block;
     width: 100%;
+  }
+
+  .portDetail__table th{
+    padding-bottom: 0;
   }
 
   .portDetail__img {
