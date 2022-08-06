@@ -65,12 +65,6 @@ table {
   display: none;
 }
 
-/* スリック */
-/* .slick-slide img {
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
-} */
-
 /* top */
 /* ヘッダー */
 .header {
@@ -190,6 +184,9 @@ table {
 
 
 /* FV  */
+.fv{
+  position: relative;
+}
 .fv::after {
   position: absolute;
   top: 0;
@@ -204,8 +201,6 @@ table {
 
 .fv__inner {
   width: 100%;
-  /* height: 90vh; */
-  position: relative;
   padding-left: 12%;
   padding-top: 100px;
 }
@@ -238,7 +233,6 @@ table {
   bottom: 10px;
   color: #fff;
   font-size: 16px;
-  /* font-weight: bold; */
   letter-spacing: 0.05em;
   writing-mode: vertical-rl;
 }
@@ -319,7 +313,6 @@ table {
 }
 
 .think__txt {
-  /* width: 90%; */
   margin: 0 auto;
   max-width: 1300px;
 }
@@ -362,15 +355,6 @@ table {
 }
 
 /* ポートフォリオ詳細ページ */
-/* .portDetail__fv{
-  background-image: url(img/gallery_fv.jpg);
-  background-size: cover;
-  width: 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 500px;
-
-} */
 .portDetail__fv {
   position: relative;
 }
@@ -440,23 +424,16 @@ table {
 }
 
 .portDetail__table th {
-  /* background-color: #424242; */
-  /* color: #fff; */
   padding: 20px;
   width: 300px;
   line-height: 1.5em;
-  /* font-weight: 500; */
   text-align: left;
-  /* border-top: 1px solid #333; */
   border-bottom: 1px solid #333;
-  /* border-right: 1px solid #333; */
 }
 
 .portDetail__table td {
   padding: 20px;
-  /* border-top: 1px solid #333; */
   border-bottom: 1px solid #333;
-  /* border-right: 1px solid #333; */
   line-height: 1.5em;
 }
 
@@ -482,10 +459,6 @@ table {
     width: 60%;
   }
 
-  .fv:after {
-    height: 70%;
-  }
-
   .fv__inner {
     padding-left: 10%;
   }
@@ -495,7 +468,6 @@ table {
   }
 
   .fv__scroll {
-    bottom: 10%;
     left: 7%;
   }
 
@@ -510,20 +482,6 @@ table {
 
   .fv__scroll::after {
     height: 60px;
-  }
-
-  @keyframes arrowmove {
-    0% {
-      bottom: 10%;
-    }
-
-    50% {
-      bottom: 0%;
-    }
-
-    100% {
-      bottom: 10%;
-    }
   }
 
   /* メニュー */
@@ -585,25 +543,22 @@ table {
   /* 製作物 */
   .works {
     margin-top: 100px;
-
   }
 
   .works__list {
     flex-direction: column;
   }
-
   .works__list li {
     width: 90%;
     margin-bottom: 30px;
   }
-
   .works__list li:last-of-type {
     margin-bottom: 0;
   }
 
   /* 考え方 */
   .think {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
   .think__inner {

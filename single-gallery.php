@@ -17,14 +17,14 @@
   </div>
 
 
-  <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
+   <?php //if (have_posts()) : ?>
+    <?php //while (have_posts()) : the_post(); ?> 
       <article class="portDetail">
         <section class="portDetail__inner">
           <h2 class="portDetail__ttl"><?php the_title(); ?></h2>
 
           <?php
-          //
+          
           $design_img_loop =  CFS()->get('design_img_loop');
           foreach ($design_img_loop as $design_img) : ?>
             <div class="portDetail__img"><img src="<?php echo $design_img['design_img'] ?>" alt=""></div>
@@ -226,8 +226,8 @@
         </section>
         </artic>
 
-      <?php endwhile; ?>
-    <?php endif; ?>
+      <?php //endwhile; ?>
+    <?php //endif; ?>
 
 
 
